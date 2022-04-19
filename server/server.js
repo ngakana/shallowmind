@@ -1,5 +1,4 @@
 const express = require("express");
-const dotenv = require("dotenv").config();
 
 const { port, mongoUri } = require("./config/config");
 const connectDB = require("./dbconn");
