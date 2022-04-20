@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function NavItem({ path, Icon, subtitle }) {
     return (
-        <Link to={path} className="mx-2">
+        <Link to={path} className="mx-1">
             <li className="
                         flex flex-col items-center 
                         py-1 px-3
