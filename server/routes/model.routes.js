@@ -1,14 +1,10 @@
 const { Router } = require("express");
-
 const router = Router();
 
-router.get("/", (_, res) => {
-    res.status(200).json({"data": "list of models"});
-});
+const { getModels, getModel } = require("../controllers/model.controller");
 
-router.get("/:id", (req, res) => {
-    let id = req.url.split('/')[2];
-    res.status(200).json({"data": `model id=${id} metadata`});
-})
+router.route("/")
+    .get(getModels)
+    .post(getModel)
 
 module.exports = router;
