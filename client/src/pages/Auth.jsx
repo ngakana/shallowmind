@@ -52,11 +52,11 @@ function Auth() {
                             borderRadius: '5px'
                         }}
                     >
-                        <LoginButton icon={GoogleIcon} scale={0.7} ctaText="Login with Google" url='/models' color="red" />
+                        <LoginButton icon={GoogleIcon} scale={0.7} ctaText="Continue with Google" url='/models' bgColor="bg-red-400" />
                         <p>OR</p>
-                        <LoginButton icon={GitHubIcon} scale={0.7} ctaText="Login with GitHub" url='/models' color="violet" />
+                        <LoginButton icon={GitHubIcon} scale={0.7} ctaText="Continue with GitHub" url='/models' bgColor="bg-slate-800" />
                         <p>OR</p>
-                        <LoginButton ctaText="Login with a dummy account" url='/models' color="sky" />
+                        <LoginButton icon={NinjaIcon} scale={0.7} ctaText="Continue with a dummy account" url='/models' bgColor="bg-sky-500" />
                         <p>OR fill form below</p>
                         <Field
                             label="Username"

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
-function LoginButton({ url, icon: Icon, ctaText, color, scale }) {
+function LoginButton({ url, icon: Icon, ctaText, bgColor, scale }) {
     return (
-        <Link to={url} className={`my-3 px-2 py-1 border-2 border-${color}-500 rounded-xl`}>
+        <Link to={url} className={`my-2 px-2 py-1 ${bgColor} rounded-md`}>
             <div className="flex items-center">
                 {Icon && <Icon scale={scale} />}
-                <p className={`px-4 font-semibold text-${color}-500`}>{ctaText}</p>
+                <p style={{ color: 'antiquewhite' }} className={`px-2 font-semibold`}>{ctaText}</p>
             </div>
         </Link>
     )
